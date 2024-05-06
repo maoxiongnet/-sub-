@@ -1,6 +1,7 @@
 #Chatgpt
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,search.chatgpt.com
 DOMAIN-SUFFIX,gpt3.org
 DOMAIN-SUFFIX,auth0.com
 DOMAIN-KEYWORD,openai
