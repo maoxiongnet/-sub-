@@ -1,0 +1,37 @@
+name: 更新 ChinaMax 无 ASN 规则
+
+on:
+  schedule:
+    # 每天 UTC 20:17，即北京时间 04:17
+    - cron: "17 20 * * *"
+  workflow_dispatch:
+
+# 只用 GitHub 自动发的临时令牌提交生成结果，不需要个人密钥。
+permissions:
+  contents: write
+
+concurrency:
+  group: chinamax-no-asn
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: 生成规则
+        run: python3 rules/chinamax-no-asn/build.py --output rules/chinamax-no-asn/chinamax-no-asn.list
+
+      - name: 有变化才提交
+        run: |
+          if [ -z "$(git status --porcelain -- rules/chinamax-no-asn/chinamax-no-asn.list)" ]; then
+            echo "规则没有变化"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add rules/chinamax-no-asn/chinamax-no-asn.list
+          git commit -m "更新 ChinaMax 无 ASN 规则"
+          git push
