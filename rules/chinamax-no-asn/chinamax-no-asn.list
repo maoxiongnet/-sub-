@@ -2,9 +2,9 @@
 # SOURCE: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax.list
 # SOURCE-SHA256: 6ec5fb9a4ae5cbb621b4435641feb24714b6f4bf8a78af7ae66693b6d6ce3b40
 # TENCENT-CIDR: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/asn/AS132203.list
-# TENCENT-CIDR-SHA256: 4372c95b3e40751812e89f9a5cc47fa1c02e64837bd95f3980449a09d2227163
-# CHANGE: IP-ASN,132203 换成 197 条网段，共删除 1 条 ASN 规则
-# TOTAL: 123258
+# TENCENT-CIDR-SHA256: 3692e641f3ce42b3e55772603de1f35c434cb09195456973e48bb5c6451915d8
+# CHANGE: IP-ASN,132203 换成 199 条网段，共删除 1 条 ASN 规则
+# TOTAL: 123260
 # LICENSE: GPL-2.0（blackmatrix7/ios_rule_script）、GPL-3.0（MetaCubeX/meta-rules-dat）
 DOMAIN,cpro.baidustatic.com
 DOMAIN,analytics.strava.com
@@ -123200,6 +123200,7 @@ IP-CIDR,150.109.208.0/21,no-resolve
 IP-CIDR,150.109.216.0/22,no-resolve
 IP-CIDR,150.109.220.0/23,no-resolve
 IP-CIDR,150.109.224.0/19,no-resolve
+IP-CIDR,156.240.88.0/22,no-resolve
 IP-CIDR,161.120.0.0/16,no-resolve
 IP-CIDR,162.14.0.0/19,no-resolve
 IP-CIDR,162.14.32.0/21,no-resolve
@@ -123259,6 +123260,7 @@ IP-CIDR6,240d:c000:f040::/42,no-resolve
 IP-CIDR6,240d:c000:f0c0::/42,no-resolve
 IP-CIDR6,240d:c000:f1c0::/43,no-resolve
 IP-CIDR6,240d:c000:f1f0::/44,no-resolve
+IP-CIDR6,240d:c000:f3f0::/44,no-resolve
 IP-CIDR6,240d:c010:16::/48,no-resolve
 IP-CIDR6,240d:c010:20::/44,no-resolve
 IP-CIDR6,240d:c010:58::/48,no-resolve
