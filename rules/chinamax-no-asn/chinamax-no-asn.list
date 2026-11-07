@@ -2,7 +2,7 @@
 # SOURCE: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax.list
 # SOURCE-SHA256: 6ec5fb9a4ae5cbb621b4435641feb24714b6f4bf8a78af7ae66693b6d6ce3b40
 # TENCENT-CIDR: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/asn/AS132203.list
-# TENCENT-CIDR-SHA256: 3692e641f3ce42b3e55772603de1f35c434cb09195456973e48bb5c6451915d8
+# TENCENT-CIDR-SHA256: 9c80929004c30fe7276f113179067cc459fe2befb555ad84e5d1e13ffc419cd5
 # CHANGE: IP-ASN,132203 换成 199 条网段，共删除 1 条 ASN 规则
 # TOTAL: 123260
 # LICENSE: GPL-2.0（blackmatrix7/ios_rule_script）、GPL-3.0（MetaCubeX/meta-rules-dat）
@@ -123081,6 +123081,7 @@ IP-CIDR,43.130.224.0/19,no-resolve
 IP-CIDR,43.131.0.0/18,no-resolve
 IP-CIDR,43.131.224.0/19,no-resolve
 IP-CIDR,43.132.0.0/18,no-resolve
+IP-CIDR,43.132.68.0/24,no-resolve
 IP-CIDR,43.132.96.0/19,no-resolve
 IP-CIDR,43.132.128.0/17,no-resolve
 IP-CIDR,43.133.0.0/16,no-resolve
@@ -123200,7 +123201,6 @@ IP-CIDR,150.109.208.0/21,no-resolve
 IP-CIDR,150.109.216.0/22,no-resolve
 IP-CIDR,150.109.220.0/23,no-resolve
 IP-CIDR,150.109.224.0/19,no-resolve
-IP-CIDR,156.240.88.0/22,no-resolve
 IP-CIDR,161.120.0.0/16,no-resolve
 IP-CIDR,162.14.0.0/19,no-resolve
 IP-CIDR,162.14.32.0/21,no-resolve
@@ -123224,7 +123224,7 @@ IP-CIDR,162.62.240.0/23,no-resolve
 IP-CIDR,162.62.244.0/22,no-resolve
 IP-CIDR,162.62.248.0/23,no-resolve
 IP-CIDR,162.62.250.0/24,no-resolve
-IP-CIDR,162.62.253.0/24,no-resolve
+IP-CIDR,162.62.252.0/23,no-resolve
 IP-CIDR,162.62.254.0/24,no-resolve
 IP-CIDR,170.106.0.0/17,no-resolve
 IP-CIDR,170.106.128.0/18,no-resolve
@@ -123250,6 +123250,7 @@ IP-CIDR,210.171.232.0/21,no-resolve
 IP-CIDR,210.180.74.0/23,no-resolve
 IP-CIDR,211.56.92.0/22,no-resolve
 IP-CIDR,211.152.148.0/23,no-resolve
+IP-CIDR,211.152.158.0/23,no-resolve
 IP-CIDR6,240d:c000:1000::/36,no-resolve
 IP-CIDR6,240d:c000:2000::/35,no-resolve
 IP-CIDR6,240d:c000:6000::/36,no-resolve
@@ -123261,7 +123262,6 @@ IP-CIDR6,240d:c000:f0c0::/42,no-resolve
 IP-CIDR6,240d:c000:f1c0::/43,no-resolve
 IP-CIDR6,240d:c000:f1f0::/44,no-resolve
 IP-CIDR6,240d:c000:f3f0::/44,no-resolve
-IP-CIDR6,240d:c010:16::/48,no-resolve
 IP-CIDR6,240d:c010:20::/44,no-resolve
 IP-CIDR6,240d:c010:58::/48,no-resolve
 IP-CIDR6,240d:c010:5c::/48,no-resolve
